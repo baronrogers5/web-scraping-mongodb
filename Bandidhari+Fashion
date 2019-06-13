@@ -1,0 +1,563 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta name="referrer" content="always" /><link rel="dns-prefetch" href="//utils.imimg.com" /><link rel="dns-prefetch" href="//apps.imimg.com" /><link rel="dns-prefetch" href="//2.imimg.com" /><link rel="dns-prefetch" href="//3.imimg.com" /><link rel="dns-prefetch" href="//4.imimg.com" /><link rel="dns-prefetch" href="//5.imimg.com" /><!-- view layout main1 called -->
+
+<link type="text/css" rel="stylesheet" href="//utils.imimg.com/imsrchui/css/mcatlayout.min-v106.css">
+    <link type="text/css" rel="stylesheet" href="//apps.imimg.com/css/reqForms.css?v=22">
+<link rel='preload' href="//utils.imimg.com/imsrchui/js/jquery.js" crossorigin="anonymous" as='script'>
+<link rel='preload' href="//utils.imimg.com/imsrchui/js/pre.min-v269.js" crossorigin="anonymous" as='script'>
+<link rel='preload' href="//apps.imimg.com/js/reqForms.min.js?v=68" crossorigin="anonymous" as='script'>
+<link type="application/opensearchdescription+xml" rel="search" href="https://dir.indiamart.com/opensearch.xml"><TITLE>Bandidhari Fashion - Indiamart</TITLE><meta name="robots" content="noindex, follow"><meta name="format-detection" content="telephone=no"><script> var ims = {}; var page = {}; page.scriptVer='reqForms.min.js?v=68'; ims.pageResult = 0; ims.pg = 2; var min="";var sugg_ver = 'suggest.js';  var glmodid = "DIR"; ims.vidcnt = 0;</script>
+    <script >
+    function readCookie(e) {
+        var i = e + "=";
+        return document.cookie.length > 0 && (offset = document.cookie.indexOf(i),
+            -1 != offset) ? (offset += i.length,
+            end = document.cookie.indexOf(";", offset),
+    -1 == end && (end = document.cookie.length),
+    unescape(document.cookie.substring(offset, end))) : "v4iilex" == e ? readCookie("v4iil") : ""
+    }
+    function getparamVal(e, i) {
+        if (e > "") {
+            var a = "|" + e + "|"
+                , o = new RegExp(".*?\\|" + i + "=([^|]*).*|.*");
+            return a.replace(o, "$1")
+        }
+        return ""
+    }
+
+    function callUntillDefined(fnstring, attemptCounter, time, fnparams) {
+        if (typeof(fnparams) === 'undefined') {
+            fnparams = [];
+        }
+        var fn = window[fnstring];
+        if (typeof fn === "function") {
+            fn.apply(null, fnparams);
+        } else if (attemptCounter <= ims.maxAttempt) {
+            setTimeout(function() {
+                callUntillDefined(fnstring, ++attemptCounter, time * 2, fnparams)
+            }, time);
+        }
+    };
+    function checkifObjSet(){
+        if(typeof(ims.formTyp) != 'undefined'){
+            if(ims.formTyp !='Sign In'){
+                if(typeof funcExecuted == 'undefined'){
+                    setTimeout(function(){
+                        checkifObjSet()
+                    },10);
+                }
+                else{
+                    if(ims.formTyp==='Get Best Price'){
+                        callUntillDefined('openOnClickBLForm', 0, 30);
+                        recordOutboundLink( 'Get Quotes Now'  , 'IM Global Header', location.hostname,   0, 0);
+                    }else{
+                        eTarget = '';
+                        var enqNum = '';
+                        var totalPrd = parseInt(ims.pageResult);
+                        if (ims.typp.match(/SIM/)) {
+                            var simDetails = ims.posIdd.split("_");
+                            enqNum = simDetails[0];
+                        } else {
+                            enqNum = ims.posIdd;
+                        }
+                        nextImgg = (enqNum < totalPrd) ? nextimg : '';
+                        callUntillDefined('prodDetails', 0, 10,[eTarget,ims.typp,nextImgg,enqNum]);
+                        //Event tracking code to call tracking before page load//
+                        var sStr = ims.ss;
+                        var gaAct = 'Pos' + enqNum + '-'+ims.typp;
+                        var sup_typ = '';
+                        if (typeof(ims.typp) != 'undefined' && ims.typp=== 'BTN') {
+                            sup_typ = 'Trac-Send-Enquiry';
+                        }else{
+                            sup_typ = document.getElementById('LST'+enqNum).getAttribute('data-csttypnm');
+                        }
+                        recordOutboundLink(sStr, sup_typ, gaAct, 0, 0);
+                        //End
+                    }
+                }
+            }else
+            {
+                callUntillDefined('signIn', 0, 30, ['','','','']);
+            }
+        }
+    };
+    function addLoader() {
+        document.getElementById('loadbar').style.display='block';
+        loadScript();
+        checkifObjSet();
+    };
+
+
+    var event = document.createEvent('Event');
+    event.initEvent('jqready', true, true);
+    function triggerJqueryDefined(fnstring, attemptCounter, time, fnparams) {
+        if (typeof(fnparams) === 'undefined') {
+            fnparams = [];
+        }
+        var fn = window[fnstring];
+        if (typeof fn === "function") {
+            //fn.apply(null, fnparams);
+            document.dispatchEvent(event);
+            loadScript();
+        } else if (attemptCounter <= ims.maxAttempt) {
+            setTimeout(function() {
+                triggerJqueryDefined(fnstring, ++attemptCounter, time * 2, fnparams)
+            }, time);
+        }
+    };
+document.addEventListener('preready', function (e) {loadScript();});
+
+document.addEventListener("click", function(e){
+  var c_target_id=e.target.id;
+if(document.readyState != "complete"){
+var cName=e.target.className;
+var pcName=e.target.parentElement.className;
+var intent_enable = 'yes';
+if ((((cName.match(/bp btn2g/)) || (cName.match(/fs11/)) || (cName.match(/bg rib/)) || (cName.match(/nor_i imwd/))  || (pcName.match(/nor_i imwd/)) || (cName.match(/ribn NP/)) || (cName.indexOf("prc") == 0) || (cName.indexOf("quan") == 0) || (cName.match(/cIn/)) || (cName.match(/cl/)) || (cName.match(/ls_co phn bo|mo viewn vmn/)) || (cName.match(/pns_h/)) || (cName.match(/wh mlin cur/)) || (cName.match(/pnm ldf cur eq/))) || ((c_target_id != null && c_target_id != "undefined" && c_target_id != "") && ((c_target_id.indexOf("bu") == 0) || (c_target_id.indexOf("rp") == 0) || (c_target_id.indexOf("sm_title") == 0)))) && (typeof funcToCall == 'undefined')){
+var cid=(e.target.parentNode.id.match(/LST/)) ? e.target.parentNode.id : e.target.parentElement.parentElement.parentElement.parentElement.parentElement.id;
+ims.posIdd = cid;
+if((pcName != "undefined" && pcName != "" && pcName=='row') && (cid=='') && (ims.posIdd=='')){
+    var nmId = e.target.parentNode.parentNode.parentNode.id;
+    if(nmId !=''){ims.posIdd = nmId;}
+}
+ims.posIdd = ims.posIdd.replace("LST", "");
+var num = parseInt(ims.posIdd);
+var total = parseInt(ims.pageResult);
+ims.formTyp = 'Enq';
+ims.typp = 'Contact Seller';
+if((cName.match(/bg rib/)) || (cName.match(/nor_i imwd/)) || (pcName.match(/nor_i imwd/)) || (cName.match(/ribn NP/)) ||(c_target_id.match(/bu/)) ||(cName.match(/-rib/))){
+    ims.typp = 'Image';
+    if(ims.posIdd){ ims.posIdd = ims.posIdd.replace("imgenq", "");}
+    if(c_target_id != null && c_target_id != "undefined" && c_target_id != ""){ ims.posIdd = c_target_id.replace("bu", "");}
+}else if((cName.indexOf("prc") == 0) || (cName.indexOf("quan") == 0)){
+    ims.typp = 'Price';
+    if(ims.posIdd){ ims.posIdd = ims.posIdd.replace("prcenq", "");}
+    if(c_target_id != null && c_target_id != "undefined" && c_target_id != ""){ims.posIdd = c_target_id.replace("prcenq", "");}
+}else if((cName.match(/cIn/)) || (cName.match(/cl/)) || (cName.match(/ls_co phn bo|mo viewn vmn/)) || (cName.match(/pns_h/))){
+    ims.typp = 'Click To Call';
+    ims.posIdd = ims.posIdd.replace("mobenq", "");
+}else if(cName.match(/wh mlin cur/)){
+    ims.typp = 'more';
+}else if((cName.match(/pnm ldf cur eq/)) ||(cName.match(/lg eq/)) ){
+    ims.typp = 'Title';
+    if(c_target_id =='' && ims.posIdd==''){
+    var nmId = e.target.parentNode.parentNode.parentNode.id;
+    if(nmId !=''){
+    ims.posIdd = nmId;
+    ims.posIdd = ims.posIdd.replace("LST", "");
+    }
+    }
+}
+if (c_target_id != null && c_target_id != "undefined" && c_target_id != "")
+{
+    if(c_target_id.indexOf("rp") == 0){
+    var sp = c_target_id.replace("rp", "").split("_");
+    ims.typp = 'SIM' + sp[1];
+    ims.posIdd = c_target_id.replace("rp", "");
+    }
+    else if (c_target_id.indexOf("sm_title") == 0)
+    {
+        var sp = c_target_id.replace("sm_title", "").split("_");
+        ims.typp = 'SIM' + sp[1];
+        ims.posIdd = c_target_id.replace("sm_title", "");
+    }
+}
+if (ims.typp != '') {
+    addLoader();
+}
+    intent_enable = 'no';
+}else if((cName.match(/ih-pbr/)) && (typeof isBlEnqLoaded == 'undefined'))
+{
+    ims.formTyp = 'Get Best Price';
+    addLoader();
+    intent_enable = 'no';
+}else if(((cName.match(/ih-zz/)) || (cName.match(/rmv/))) && (typeof isBlEnqLoaded == 'undefined'))
+{
+    ims.formTyp = 'Sign In';
+    addLoader();
+    intent_enable = 'no';
+}
+if(((cName.match(/pnm ldf cur/)) || (cName.match(/lcname/)) || (cName.match(/wh mlin/))) && intent_enable=='yes'){
+    var nod_Id = '';var intent_Typ = '';
+    if(cName.match(/pnm ldf cur/)){
+        nod_Id = e.target.parentNode.parentNode.parentNode.id;
+        intent_Typ = 'Title';
+    }else if(cName.match(/wh mlin/))
+    {
+        nod_Id = e.target.parentNode.parentNode.parentNode.parentNode.parentNode.id;
+        intent_Typ = 'More_Link';
+    }else if(cName.match(/lcname/))
+    {
+        nod_Id = e.target.parentNode.parentNode.parentNode.parentNode.id;
+        intent_Typ = 'Company';
+    }
+    if(nod_Id !=='' && nod_Id !=="undefined"){
+        var dispp_id = document.getElementById(nod_Id).getAttribute('data-dispid');
+        var unitglId = document.getElementById(nod_Id).getAttribute('data-glid');
+        if((dispp_id !=='' && dispp_id != "undefined") && (unitglId !='' && unitglId != "undefined")){
+            callUntillDefined('getInterestRecord', 0, 50,[{'modreftypflag': '2','displayId': dispp_id,'modid': 'DIR','R_glusr_id': unitglId,'mcat_id': ims.mcatid}, intent_Typ]);
+        }
+    }
+}
+if(intent_enable=='no'){
+var timer = setInterval(function() {
+    //if ((document.getElementById('t901_maindiv').style.display !=='none') || (document.getElementById('t901_enrichform_maindiv').style.display !=='none') || (document.getElementById('sign_in').innerHTML !=='')|| (document.getElementById('t901_enqVerification').style.display !=='none' && document.getElementById('t901_enqVerification').style.display!='')){
+    if ((document.getElementById('t0901_bewrapper').style.display !='') || (document.getElementById('sign_in').innerHTML !=='') ){
+        document.getElementById('loadbar').style.display='none';
+        clearInterval(timer);
+    }
+}, 200);
+}
+}
+if(c_target_id.match(/VidClk/)&& (typeof vidfilter == 'undefined'))
+{
+   addLoader();
+   intent_enable = 'novid';
+}
+if(intent_enable=='novid' ){
+
+var timer = setInterval(function() {
+   if(typeof vidfilter == 'function'){
+   document.getElementById('loadbar').style.display='none';
+
+   vidfilter();
+   clearInterval(timer);
+ }
+
+}, 200);
+}
+});
+
+    ims.loadScriptCalled=0;
+    function loadScript() {
+        ims.loadScriptCalled++;
+        if(ims.loadScriptCalled > 3){
+            return;
+        }
+        var slash = "/";
+        var u = "utils.imimg.com"+slash;
+        var a = "apps.imimg.com"+slash;
+        if(location.hostname.match(/dev/)){
+            u = 'dev-utils.imimg.com'+slash;
+            a = "dev-apps.imimg.com"+slash;
+        }else if(location.hostname.match(/stg/)){
+            u = 'stg-utils.imimg.com'+slash;
+            a = "stg-apps.imimg.com"+slash;
+        }
+        var p='imsrchui'+slash+'js'+slash;
+        var hp='globalhf'+slash+'header'+slash;
+
+        var jquery  = u+p+'jquery.js';
+        var pre     = u+p+'pre.min-v269.js';
+        var blEnq   = a+'js'+slash+'reqForms.min.js?v=68';
+        var jq_ac   = u+'suggest'+slash+'js'+slash+'suggest.js';
+        var hdr     = u+hp+'header-new120.js';
+        var links = [jquery, hdr, jq_ac, pre, blEnq];
+        if(ims.loadScriptCalled===1){
+            loadGtm();
+            links = [jquery];
+        }else if(ims.loadScriptCalled===2){
+            links = [ hdr, pre, jq_ac];
+        }else if(ims.loadScriptCalled===3){
+            links = [ blEnq];
+        }
+
+        var headElement = document.getElementsByTagName("head")[0],
+            script, i;
+        for (i = 0; i < links.length; i++) {
+            script = document.createElement("script");
+            script.setAttribute('type', 'text/javascript');
+            script.setAttribute('crossorigin', 'anonymous');
+            if (script.readyState) { //IE
+                script.onreadystatechange = function() {
+                    if (script.readyState == "loaded" ||
+                        script.readyState == "complete") {
+                        script.onreadystatechange = null;
+                    }
+                };
+            }
+            script.src = '//'+links[i];
+            headElement.appendChild(script);
+            if(i===0 && ims.loadScriptCalled===1){
+                triggerJqueryDefined('jQuery', 5, 50);
+            var interval = setInterval(function () {
+                   if ( typeof(jQuery) != 'undefined' && typeof(jQuery.isReady) === 'boolean' && jQuery.isReady ) {
+                       clearInterval(interval);
+                       //$(document).fire('_jquery_ready');
+
+                   }
+            },10);
+            }
+        }
+    }
+    if (window.addEventListener)
+        window.addEventListener("load", loadScript, false);
+    else if (window.attachEvent)
+        window.attachEvent("onload", loadScript);
+    else window.onload = loadScript;
+
+
+document.addEventListener('preready', function (e) {
+      document.getElementById('btnSearch').removeAttribute("disabled");});
+var clearinter = setInterval(function() {
+    if (document.readyState != "complete") {
+      document.getElementById('btnSearch').setAttribute("disabled", "disabled");
+    } else {
+
+       clearInterval(clearinter);
+    }
+}, 100)
+
+
+    </script>
+
+    <link type="text/css" rel="stylesheet" href="//utils.imimg.com/globalhf/header/header.min-v55.css"><!--<script type="text/javascript" src="//utils.imimg.com/imsrchui/js/pre.min-v269.js" crossorigin="anonymous"></script>--></head><body><style>.loadbar {width: 100%; position: fixed; left: 0; right: 0; height: 100%; background-color: #fff; opacity:.3 ;z-index: 9999; top:0;bottom: 0} .loader { border: 6px solid #000; border-radius: 50%; border-top: 6px solid #fff; width: 40px; height: 40px; -webkit-animation: spin 2s linear infinite; /* Safari */ animation: spin 2s linear infinite; position: fixed; left: 0; right: 0; top:0;bottom: 0; margin: auto; } @-webkit-keyframes spin { 0% { -webkit-transform: rotate(0deg); } 100% { -webkit-transform: rotate(360deg); } } @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }</style>
+<div class="loadbar" id="loadbar" style="display: none">
+<div class="loader"></div></div>
+<script>
+if( document.getElementById("pstBuy")){
+var hd_pbr = document.getElementById("pstBuy").childNodes[0];
+    if(hd_pbr.hasAttribute("href")){ hd_pbr.removeAttribute("href"); }
+}
+if( document.getElementById("lshead")){
+var signIn = document.getElementById("lshead").childNodes[0];
+    if(signIn.hasAttribute("href")){ signIn.removeAttribute("href"); }
+}
+</script>
+<header><div class="headercntrl"><div id="header"><div class="hedr"><div class="hd_top_strp"> <div class="hdlfr" id="hd_nav"> <div id="cssmenu" class="ch_fr"> <ul class="fth" > <li id="pay" class="hgtb"><a href="//paywith.indiamart.com?bannerid=cntrlheader" target="_blank" class="buyer-protection"><span class="in-map"></span>Pay With IndiaMART<span class="bu_n">New</span></a></li><li class="hd-dw-apps cpo hgtb" id="dwnappp"><span><a class="rmv" href="//www.indiamart.com/mobile/"><span class="dwnp"></span>Download App</a></span></li></ul><ul class="fth" id="header_right" style="display:block"><li class="hgtb"><a href="https://help.indiamart.com/" id="help-header-link">Help</a></li><li class="hgtb">Call us at <span id="hd_tollFree" class="bld">096-9696-9696</span></li><li class="has-sub hgtb" id="slMtp"><a href="//www.indiamart.com/seller/" id="ch_sell" class="cpo"><span class="ih-pp1 lgn1" id="sell"> Sell On IndiaMART</span></a></li>  </ul> </div> </div> </div> </div> <div class="gl-wrapper"><div class="nwHdr"> <div class="hdlft"><a href="//www.indiamart.com/" class="hd_logo">IndiaMART</a></div> <div class="hdw hdLk"> <div class="srchB ch_fr"> <div class ="hd_srch dir_srch" id="hdSrh"><div class="wrpd3 select-wrapper" id="drpn" style="display:none"><span id="hold">Products</span> <ul class="drp"> <li id="pr" class="active"><a><i class="icon-envelope icon-large"></i>Products</a></li> <li id="bl"><a><i class="icon-truck icon-large"></i>Buy Leads</a></li> <li id="te"><a><i class="icon-plane icon-large"></i>Tenders</a></li> </ul> </div><form name="searform" method="get" onsubmit="return validator(document.searform);" id="hdr_frm" action="https://dir.indiamart.com/search.mp?ss="> <input type="submit" id="btnSearch" class="hd_srBtn ch_fr" value=Search> <input placeholder="Enter product / service to search" id="search_string" name="ss" class="hd_txt ch_fr"> </form> </div> <div class="pstBuy ch_flt lgn1" id="pstBuy"><a href="//my.indiamart.com/blgen/postbl?modid=IMHOME" class="ih-pbr ch_post_buy">Get Best Price</a></div><div class="fr1"><ul  id="langdrpdwn" style="display:none;"> <li class="langli"></li><li><div class="hindme" style="display:none;">हिंदी में देखने के लिये<button class="tclose"></button></div> </li> </ul><ul id="cssmenu1"><li id="message-center"></li><li class="has-sub hgtb" id="lshead" style="display:none;"><a class="rmv" href="//my.indiamart.com">Sign In</a></li></ul></div><div class="clear"> </div></div></div></div> </div> <div class="ch_clb" id="loginstrip"></div></div> <div id="sign_in"></div> <div id="bl_overlay_layer_v2"></div> <div id="boxes"></div> <div id="miclag"></div></div></header><div id="content">
+<div id="page_variables"><script type="text/javascript">/* <![CDATA[ */var city_search = '';var mcat_image_125= '';var mcat_image_250='';var mcat_image_500='';var biz_search = ''; /* check, it's using or not*/ var spell_check = '';var cat_name = 'Bandidhari Fashion';var result_status = '';var send_counter=0; var setXnHistCity = 0; var isadult=0; /*global variable to enable set city in xnHist*/ ims.page_begin_tm=new Date().getTime(); ims.tiggered_event_lbl=new Array(); ims.event_cnt=0; ims.lst_count = 10;ims.search_result_language = 'en';ims.lang = 'en'; ims.mcat_ids = 0; ims.pageDisplayResult = 0;ims.ss = 'Bandidhari Fashion';ims.fqs = 'bandidhari fashion';ims.srchmcat= ''; ims.srchflname = '';ims.fcilp = '0'; ims.oddFlag = '';ims.unq_list_count = '';ims.cq = ''; ims.biz = '';ims.pmcat = ''; ims.geo_cc = 'IN'; ims.geo_cn = 'India'; ims.cq_all = ''; ims.r = '1';/*total result count*/ims.modid = 'DIR';ims.catid = '-1';ims.mcatid = '-1';ims.grpid='0';ims.gAdFetch = 0;ims.pr = '0';ims.cat = '';ims.disclaimerflg = '0';ims.temp_record = '';ims.sDivId = 'scroll'+'2';ims.firstResultCount = 1; ims.pageResult = ims.pageResult+ims.firstResultCount; ims.pageDisplayResult = 1;ims.relmcat = '0'; ims.c =((-(new Date).getTimezoneOffset()/60==5.5)==1) ? 'IN' : ''; ims.scroll = new Array(); ims.maxAttempt = 10; /* max attempts of recursive function call*/ ims.stop_pg = 10; /* tostop pagination if no further supplier*/ ims.checkonload = 0; ims.trackCustomVar = '1';ims.bizFilterAppeared = '0';ims.myCity = '';ims.qtype='Normal';ims.myCityurl = '';var prod_serv = 'C';page.countryCode = 'IN';page.country = 'India';page.countryIp = '49.206.15.121';page.mcatIds = 0;ims.pageType ='Company'; var bl_init={divClass:'bl_dir',option:{customHeadline:"", mcatName:"Bandidhari Fashion", catID:"-1",modID:"DIR",mcatID:"-1"}}; page.pageType='search'; </script></div>
+<div class="q_hm1 cnhdr fxmn" >        <div class="msec" style="padding-left:190px">
+<div style="margin-left:-190px" id="stk_city">
+<div class="sh-dv"><h1>Bandidhari Fashion</h1>  <span class="cafp" style=""> (1 result available)</span>
+<input type="hidden" value="1" id="totalresult">
+</div>
+<style>.ldLocat4{border:2px solid #969696;border-radius:50%;border-top:2px solid #fff;width:12px;height:12px;-webkit-animation:spin 2s linear infinite;animation:spin 2s linear infinite;position:absolute;right:-289px;top:-5px;bottom:0;z-index:1;margin:auto}</style>
+<div class="ldLocat4" id="ldLocat4" style="display: none"></div>
+<script type = "text/javascript">
+ function addloader4(cityform,url,page) {
+      if(typeof(cityRedirectToImpcat) !== 'undefined')
+      {
+        document.getElementById('ldLocat4').style.display='none';
+        document.getElementById('locate').style.display='block';
+        return cityRedirectToImpcat(cityform,url,page);
+      }
+      else{
+        document.getElementById('locate').style.display='none';
+        document.getElementById('ldLocat4').style.display='block';
+        setTimeout(function() {addloader4(cityform,url,page)}, 1);
+      }
+    return false;
+    };
+</script>    
+<div class="wbg tcty"><ul class="fl cWd" id='topCity'>
+<li><span class="slCty">Location</span><div class="fr"><form method="post" onsubmit="return addloader4(document.cityForm,'//dir.indiamart.com/search.mp?ss=bandidhari+fashion&lang=en','bandidhari+fashion');" name="cityForm"><div class="frpm"><input type="text" name="city_ss" id="txt-city" class="srin ui-autocomplete-input ui-autocomplete-loading frpmi" placeholder="Enter city" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"><span class="locate nearmecity" id="locate"><span class = 'near2'>Near me</span></span>
+<div class="clb"></div>
+</div><input type="image" src="//utils.imimg.com/imsrchui/imgs/z.gif" alt="" id="city_sugg"></form></div></li>
+ 
+ <li id = "allindia" class="right-city"><a id="all" href="//dir.indiamart.com/search.mp?ss=bandidhari+fashion&lang=en" onclick="recordOutboundLink('surat', 'IMS', 'city-clicked', 0, 0);updateCookie('xnHist', {'city':'','cvstate':''});;">All India</a></li>
+ <script>
+if(document.getElementById('allindia') != null && document.getElementById('all') != null)
+{
+//Highlighting all india when its being selected and making it  unclickable
+var x = document.getElementById("allindia");
+x.classList.add("active");
+document.getElementById("all").outerHTML="";
+x.innerHTML = "All India";
+//var y = document.getElementById("usercity");
+//y.classList.remove("active2");
+}
+</script>
+<li class="right-city rc"><a href="//dir.indiamart.com/search.mp?ss=bandidhari+fashion&cq=surat&lang=en" onclick="recordOutboundLink('surat', 'IMS', 'city-clicked', 0, 0);;">Surat</a></li>
+        </div>
+</div><div class="lay-left rwth" id="lay-lft" style="float:right"><div class="m10_c"><object><param name="wmode" value="opaque"/><div id="m4tTOP"></div></object></div>
+<div id="m4ad" class="off llbp"><div align="CENTER"><span><object><param name="wmode" value="opaque"><span id="m4tTOP1"></span></object></span></div><div class="cr"></div></div><p class="on" id="m4tgap"></p><div class="wd100" id="wd100">
+<div class="clrfil" style="display:none;">Showing results with Videos. <u><b class="clrfltr cur"> Clear Filter</b></u> </div><div ></div>
+<div class="main-tb"><div class="lst-cell"><ul class="wlm" id="m"><li class="lst lst_cl  mft2  nlc" id="LST1"    data-itemid="23278892" data-dispid="10542864032"  data-glid="23278892" data-csttypwgt="1399" data-csttypnm="FREE-VERIFIED" data-city="Surat" data-state="Gujarat" data-catid="" data-mcatid=""  data-disflg="1" data-modref="1" ><div class="f-div r-e-h ft bdr1"><div class="l-cl b-w"><div class="prd-img"><div class="noIm"><span>No Image<br>Available</span></div></div><div class="rht pnt"><div class="pnm ldf cur eq"><h3 class="lg eq">Bandidhari Fashion</h3></div><div class='desc des_p'>                <span class="bo">Company Profile: </span>Mfg Of lace &amp; dress materials</div></div></div><div class="r-cl b-gry"><a href="https://www.indiamart.com/bandidhara-fashion/" target="_blank"><h4 class="lcname">Bandidhari Fashion</h4></a><p class="sm clg" data-rlocation="Patel Nagar">Patel Nagar, Surat <span class="to-txt" id="citytt1">793, First Floor, New GIDC, Katargam, Patel Nagar,<br>Surat<span> - </span>395004, Gujarat</span></p><p class="ig mrg"><span class="opac bg" id="verifiedT1"><span class="vs-img"></span>Verified Supplier</span></p><div class="f-div t-c nes"><div class="hlb cur" id="1mobenq"><span class="ls_co phn bo" ><span class="cl">Call </span><span id="pns1" class="pns_h"></span>9624616699</span></div><button id="dispid10542864032" class="bp btn2g mo active td NP-1 sen_c on">Contact Supplier<span class="fs11"> Request a quote</span></button></div></div></div><div class="in-div">                   <div class="cln-3 inner  smprd" ><div class="cln-5 t-c"><div class="f-div bd "><div class="nsim"><img  title="Ladies Embroidery Cotton Kurti" alt="Ladies Embroidery Cotton Kurti"  src='//5.imimg.com/data5/CC/WP/GX/GLADMIN-23278892/img-20181208-wa0998-125x125.jpg' data-slimg='//5.imimg.com/data5/CC/WP/GX/GLADMIN-23278892/img-20181208-wa0998-500x500.jpg' id="rp1_1" data-modref="2" data-simdispid="20386006233"></div>
+                 </div></div><div class="cln-7"><p class="cur" id="sm_tit1_1">Ladies Embroidery Cotton Kurti</p>              <span class="gtqte"> </span><p class="get" id="sm_quote1_1">Get Quote</p>
+               </div></div>                   <div class="cln-3 inner  smprd" ><div class="cln-5 t-c"><div class="f-div bd "><div class="nsim"><img  title="Ladies Designer Cotton Kurti" alt="Ladies Designer Cotton Kurti"  src='//5.imimg.com/data5/WC/KL/AO/GLADMIN-23278892/img-20181208-wa1001-125x125.jpg' data-slimg='//5.imimg.com/data5/WC/KL/AO/GLADMIN-23278892/img-20181208-wa1001-500x500.jpg' id="rp1_2" data-modref="2" data-simdispid="20386103348"></div>
+                 </div></div><div class="cln-7"><p class="cur" id="sm_tit1_2">Ladies Designer Cotton Kurti</p>              <span class="gtqte"> </span><p class="get" id="sm_quote1_2">Get Quote</p>
+               </div></div>                   <div class="cln-3 inner  smprd" ><div class="cln-5 t-c"><div class="f-div bd "><div class="nsim"><img  title="Ladies Fancy Party Wear Silk Kurti" alt="Ladies Fancy Party Wear Silk Kurti"  src='//5.imimg.com/data5/TK/NA/NM/GLADMIN-23278892/img-20181208-wa1004-125x125.jpg' data-slimg='//5.imimg.com/data5/TK/NA/NM/GLADMIN-23278892/img-20181208-wa1004-500x500.jpg' id="rp1_3" data-modref="2" data-simdispid="20386103512"></div>
+                 </div></div><div class="cln-7"><p class="cur" id="sm_tit1_3">Ladies Fancy Party Wear Silk Kurti</p>              <span class="gtqte"> </span><p class="get" id="sm_quote1_3">Get Quote</p>
+               </div></div>        </div></li></ul></div>     <div class="tb-cell">
+         
+        <div id='div-gpt-ad-1552034599247-0' class='sbnr '></div>       </div> 
+       </div>
+    <div class='c3'></div>
+    <div class="prsWd off" id="persWdgt"></div>
+    <div class="blh"><div class="bl_f  bl2_bot" id="bl_frm_scrll">
+    <div class="tl-item"><div class="an-b fbok"><div class="b-msr hd-top"></div><div class="b-msr hd-lft"></div><div class="b-msr hd-rht"></div><div class="b-msr hd-btm"></div><div class="b-msr sub-lt"></div><div class="b-msr sub-rt"></div><div class="b-msr s-bm"></div><div class="b-msr c-tp"></div><div class="b-msr c-f-en"></div><div class="b-msr c-s-ne"></div><div class="b-msr c-s-ln"></div><div class="b-msr c-t-ln"></div><div class="b-msr c-t-end"></div></div></div>
+    <div id="buy_lead_gen_formV2" data-bl="0101" class="blad rmbl blblock blenvl" style="display:none">
+  
+<div class="be-mdleWrap belft betbl bebxs bebdr1" id="t0101_inlineBL"><div class="bepr betbl"><div class="be-bgb bedtc"><div> <div class="be-bls bebxs" id="t0101_benefits"> <div class="be-bnf"> <div class="be-tpd"><div class="blnewform_sprit beW bebgp bemb8 beauto"></div>Tell us what you <br/>need</div><div class="be-tpd"> <div class="blnewform_sprit beW bebgp2 bemb8 beauto"></div>Receive seller <br/>details</div><div class="be-tpd"> <div class="blnewform_sprit beW1 bebgp3 bemb8 beauto"></div>Seal the deal</div></div></div><div class="beclr"></div></div></div><div class="bew2 bedtc bevT bebxs be-mfrm"><div class="bespc"><div class="be-fhdg" id="t0101_head">Save time! Get Best Deal</div><form name="t0101_bl_form" id="t0101_bl_form" method="post" onsubmit="return false"  class="bemnh"></form><div class="beclr"></div><div id="t0101_tCond" class="bedsnone bemt10"><input type="checkbox" class="bemt2" onclick="checkedTNC('0101')" id="t0101_tCondCheckBox"><span class="bevT bedblk">I agree to the <a href="https://www.indiamart.com/terms-of-use.html" target="_blank" class="betrmt">terms</a> and <a href="https://www.indiamart.com/privacy-policy.html" target="_blank" class="betrmt">privacy policy</a></span></div><div id="t0101_q_send_req_button" class="be-mdl"><input type="submit" id="t0101_submit" class="be_btmm" value="Submit Requirement"></div> <div class="befs14 beinfo bedsnone" id="t0101_byrinfoIn"></div><div class="belodrbg bedsnone" id="t0101_belodr"><div class="blloader"></div></div></div></div></div></div>
+         <div id="t0101_enrichform_maindiv" class="be-frmwrap bedsnone"></div>
+        </div>
+    </div></div></div></div><div class="filter" style="width:180px;margin-left:-190px;"><div id="sidebar_left"><div class="bgw t-con bxs"><div class="rfch bnone"><div class="wohm gtid ftr-stk"><div class="btb col-clk "  target="11">Business Type<span class="arr_up"></span></div><ul class="cell-bx" bizfilter="1" id="stk11"><li><a href= "//dir.indiamart.com/search.mp?ss=bandidhari+fashion&biz=10&lang=en" onclick="recordOutboundLink('Manufacturer', 'IMS', 'biztype-clicked', 0, 0);">Manufacturer</a></li></ul></div></div></div></div></div>        <div id="bl_overlay_layer" class ="layer1" style="display:none"></div><!--Div for blpopup-->
+  <style>.bedsnone{display:none;}</style>
+   <div id="t0901_bewrapper" class="be-frmwrap bedsnone"><div id="t0901_blkwrap" class="be-blckbg"></div><div class="be-frmcont"><div id="t0901_thankDiv" class="be-mcont bezid bedsnone"></div><div id="t0901_mcont" class="be-mcont bezid"> <div id="t0901_leftS" class="be-Lsc"> <div class="be-pnmS"> <div id="t0901_Prodname"></div><div class="befs16" id="t0901_ProdPrice"></div><div id="t0901_Compname"></div><div class="befs14 be-inbl" id="t0901_adr"><span id="t0901_locality"></span><span id="t0901_city"></span><span id="t0901_state"></span></div></div><div class="bepr"><div class="belodrbg bedsnone" id="t0901_imglodr"><div class="blloader"></div></div><div class="bepr bedsnone" id="t0901_benext"> <button id="t0901_beprevious" class="be-arLN bedsnone"></button> <button id="t0901_qnextbtn" class="be-arRN bedsnone"></button></div><div id="t0901parent_iframe" class="bedsnone"><div id="t0901_prodVideo" class="be-prdimg "></div></div><div id="t0901_prodimg" class="be-prdimg"></div></div><div class="be-help" id="t0901_helpQuest"> <div class="befs20 beclrW bemgb15 betxtc">How it Works</div><div class="bepr belh18"> <div class="be-hlpd belft"></div><div class="behlp1 bevT bemgb15"> <div class="bedtc"><i class="bedotW"></i></div><div class="bedtc bevT">Tell us what you need by filling in the form</div></div><div class="behlp1 bevT bemgb15"> <div class="bedtc"><i class="bedotW"></i></div><div class="bedtc bevT">Receive Verified supplier details</div></div><div class="behlp1 bevT bemgb15"> <div class="bedtc"><i class="bedotW"></i></div><div class="bedtc bevT">Compare Quotations and seal the deal</div></div></div></div></div><div id="t0901_leftR" class="be-Rsc  be-frmpop"> <i id="t0901_cls" class="be-cls">X</i> <div id="t0901_hdg" class="be-hdg"></div><div id="t0901_question" class="bemlsec"> <form name="t0901_bl_form" onsubmit="return false" id="t0901_bl_form" method="post" class="bepr bemnh"></form> </div><div class="beclr"></div><div id="t0901_tCond" class="bedsnone"><input type="checkbox" class="bemt2" onclick="checkedTNC('0901')" id="t0901_tCondCheckBox"><span class="bevT bedblk">I agree to the <a href="https://www.indiamart.com/terms-of-use.html" target="_blank" class="betrmt">terms</a> and <a href="https://www.indiamart.com/privacy-policy.html" target="_blank" class="betrmt">privacy policy</a></span></div><div id="t0901_fBtn"> <div class="befstgo bedsnone" id="t0901_submitdiv"><input value="Go" class="befstbtn"  id="t0901_submit" type="submit" style="background-color:#00a699"></div></div><div id="t0901_byrinfo" class="befs14 beinfo bedsnone"></div><div class="belodrbg bedsnone" id="t0901_belodr"><div class="blloader"></div></div><input type="hidden" id="t0901_tmpId"></div></div></div></div>         <script type="text/javascript">var s_city = 1; ims.cityID = '';ims.prc_cnt_flg=''; ims.time = 50; ims.attemptCounter = 0; var ga_clk = 0; ims.loginjs = 'imlogin-v320.js'; ims.prsnlizejs = 'pers.js?v=37';ims.identjs = 'identification_popup-v6.js'; ims.im_msgjs = 'im_msg.js?v=10'; setTimeout(function(){ try {intialize_bl(bl_init);} catch (e) {}}, 50);ims.relcat = 1;ims.zeroPrdflg = 0;ims.ctydiv = 1;ims.nameOnlyflg = 0;ims.isq = '';var ads_flag = '1'; ims.relkwrdstrp = 1;ims.jsFile = 'post.min-v311.js';    // Need to remove below code post migration of GCP
+    /**
+     *  * Delete a cookie
+     *   * @param {String} cname, cookie name
+     *    */
+    function deleteCookieW3C(cname) {
+        var d = new Date(); //Create an date object
+        d.setTime(d.getTime() - (1000*60*60*24)); //Set the time to the past. 1000 milliseonds = 1 second
+        var expires = "expires=" + d.toGMTString(); //Compose the expirartion date
+        window.document.cookie = cname+"="+"; path=/; domain=.indiamart.com; "+expires ;//Set the cookie with name and the expiration date
+
+    }
+    //R cookiw will help to decide GCP host name
+    //Now we are using GCP and DIR server
+    function getCookieW3C(t){for(var n=t+"=",r=document.cookie.split(";"),e=0;e<r.length;e++){for(var i=r[e];" "==i.charAt(0);)i=i.substring(1);if(0==i.indexOf(n))return i.substring(n.length,i.length)}return""}
+    var r_cookie = getCookieW3C('r');
+    if(r_cookie != '' && r_cookie=='g'){
+        r_cookie = 'google';
+        deleteCookieW3C('r');
+    }else{
+        r_cookie = 'unknown';
+    }
+</script>
+
+<script type="text/javascript"> imgtm=[{'CD_User-Mode':'unidentified','PV_Tracking':'','CD_Group':'0','CD_Subcat':'-1','CD_MCAT':'-1','CD_Miscellaneous':'DIR-Search-r-SS0|FilterNA|CN|vid0-p0|sc:200|bad_kwd:F|kwd_type:Normal|lang:en|','CD_List-Count':'1','CD_Source':'Direct-Url','CD_HostName':r_cookie}];  function loadGtm(){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','imgtm','GTM-NR4G');}</script>
+</div><!-- Payment Protection html -->
+<div class="c3"></div><div class="payxb">
+<div id='afscontainer2' class="ftads"></div>
+</div>
+<script type = "text/javascript">var sugg = '';var sugg1 = '';var sugg_city = '';var city_nm = '';function auto_suggest(){ if(typeof(Suggester)!="undefined" && typeof(selecttext) != 'undefined'){ sugg = new Suggester({"element":"search_string", "onSelect":selecttext, "placeholder":"Enter product / service to search", "classPlaceholder":"ui-placeholder-input","autocompleteClass":"im-gl-header","defaultBox":true,"module":"IM-HEADER","dispstyle":2}); $('#btnSearch').click(function(){ if(typeof(sugg.onEnd) === 'function'){sugg.onEnd();}}); sugg_city = new Suggester({"element":"txt-city","onSelect":select_city,"type":"city","placeholder":"Enter city", "classPlaceholder":".drop1","minStringLengthToDisplaySuggestion":1,"autocompleteClass":"cls-city","onlyCity":"true", "rowsToDisplay" :10,"displayFields": "value,=state","displaySeparator": ", ","fields": "state,id,stateid,flname,alias","showloc":1});} else{ setTimeout(function(){auto_suggest()}, 50);}}auto_suggest();
+function recordOutboundLink(link, category, action, value, timeOutFlag, nonInteractionFlag,cdmisc){
+ var linkHref = '';
+ if (typeof(link) == 'string' || typeof(link) == 'number') linkHref = link;
+ else linkHref = link.href;
+ var posno = action.match(/^Pos(\d+)/);
+ if(action.match(/^Pos/) && ga_clk == 0){
+  ga_clk = ga_clk + 1;var firstClick = 'FirstClick-'+posno[1]; var filterArr = new Array(); var filter = '';
+  if(city_search) filterArr.push('L');
+  if(filterArr.length > 0) filter = filterArr.join("");
+  if(filter){filter = filter+'F';firstClick += '-'+filter;}
+  if(ims.bizFilterAppeared == 1) firstClick += '-BFilter';
+  imgtm.push({ 'event' : 'IMEvent','eventCategory' : category,'eventAction' : firstClick,'eventLabel' : linkHref,'eventValue': value});
+ }
+ if(!nonInteractionFlag) nonInteractionFlag = false;
+if(category == 'EXP'){
+    imgtm.push({ 'event' : 'optimize.activate','eventCategory' : category,'eventAction' : action,'eventLabel' : linkHref,'eventValue': value});
+}else{
+ if(nonInteractionFlag == false) imgtm.push({ 'event' : 'IMEvent','eventCategory' : category,'eventAction' : action,'eventLabel' : linkHref,'eventValue': value,'CD_Additional_Data' : cdmisc});
+ else imgtm.push({ 'event' : 'IMEvent-NI','eventCategory' : category,'eventAction' : action,'eventLabel' : linkHref,'eventValue': value});
+}
+ if ( timeOutFlag == 1 ) setTimeout('document.location = "' + linkHref + '"', 100);
+}
+function enableAdsJS(){
+    if(ads_flag ==1 && isadult===0){(function(G,o,O,g,L,e){G[g]=G[g]||function(){(G[g]['q']=G[g]['q']||[]).push(arguments)},G[g]['t']=1*new Date;L=o.createElement(O),e=o.getElementsByTagName(O)[0];L.async=1;L.src='//www.google.com/adsense/search/async-ads.js'; e.parentNode.insertBefore(L,e)})(window,document,'script','_googCsa');}
+}
+if(typeof(ims.ss) != 'undefined' && ims.ss != '')   //avoid js error in search page for blank string
+{
+if (window.addEventListener)
+    window.addEventListener("load", enableAdsJS, false);
+else if (window.attachEvent)
+    window.attachEvent("onload", enableAdsJS);
+else window.onload = enableAdsJS;
+}
+function checkNsetPV()
+{
+    if(setXnHistCity && typeof userDataCookie === 'function'){ var new_Cook = new userDataCookie(); var pv = new_Cook.get('xnHist').pv || 0; var set_obj = {'city':'','pv' : pv }; new_Cook.set(set_obj, 'xnHist'); return true; }else{ setTimeout( checkNsetPV, 500);};
+}
+checkNsetPV();
+dirType = (window.location.href.indexOf("search.mp")>0) ? "s": ((window.location.href.indexOf("dir.indiamart.com/impcat/")>0) ? "i" : "o");
+var IMAppBanner = 'NO'; if (typeof(dirType) != 'undefined' && dirType == 's') { document.getElementById('search_string').value = 'Bandidhari Fashion'; }
+if (typeof _gaq === 'undefined' || typeof _gaq !== 'object') { var _gaq = {};
+_gaq.push =  function(array){
+ if(array[0] === '_trackPageview')
+  imgtm.push({'event':'VirtualPageview','virtualPageURL':array[1],'virtualPageTitle' :(array[2] ? array[2] : "")});
+ else if(array[0] === '_trackEvent'){
+  var triggerevent = (array[5] == true) ? 'IMEvent-NI' : 'IMEvent';
+  imgtm.push({'event': triggerevent,'eventCategory': array[1],'eventAction': array[2], 'eventLabel': array[3], 'eventValue': array[4]});
+
+ }
+}
+}
+</script>
+</div></div>
+<!-- content --><div class="c3"></div><div id="hdiv"></div><div class="cf_clb cf_footer"><div class="cf_ftHd"><div class="cf_wd"><div class="cf_social">Follow us on: <a href="https://www.facebook.com/IndiaMART" class="cf_fb" target="_blank">Facebook</a> <a href="https://twitter.com/IndiaMART" class="tw_ft" target="_blank">Twitter</a> </div><div class="cf_goMob cf_rht">Go Mobile: <a href="https://itunes.apple.com/us/app/indiamart-buy-sell-products/id668561641?mt=8" class="cf_iOS" target="_blank">iOS App</a> <a href="https://play.google.com/store/apps/details?id=com.indiamart.m" class="cf_anrd" target="_blank">Android App</a><a href="https://m.indiamart.com/" class="cf_mSit" target="_blank">https://m.indiamart.com</a></div><span class="cf_fhd">We are here to help you!</span></div></div><div class="cf_wd cf_ftlk" id="sag"></div><div class="cf_cryt"><div class="cf_wd"><span class="cf_rht"><a href="https://www.indiamart.com/terms-of-use.html">Terms of Use</a> - <a href="https://www.indiamart.com/privacy-policy.html">Privacy Policy</a> - <a href="https://www.indiamart.com/link-to-us.html">Link to Us</a></span><span>Copyright &copy; 1996-2019 IndiaMART InterMESH Ltd. All rights reserved.</span></div></div><div class="chat_window" style="position:absolute; right:0px"></div></div>
+<div id="IdentifiedPopUpHTML"></div>
+<script>
+var css = document.createElement("style");
+css.type = "text/css";
+css.innerHTML = ".cf_wd a{text-decoration:none; outline:none;-webkit-backface-visibility:hidden;}.cf_social,.cf_rht,.cf_ftlk li.last{float:right}.cf_clb, .cf_cryt{clear:both}.cf_wd{width:1001px;margin:0 auto} .cf_footer{background:#f6f6f6;border-top:solid 1px #e6e6e6; font-weight:300;font-size:14px;font-family: arial;}.cf_footer a{text-decoration:none; outline:none; -webkit-backface-visibility: hidden}.cf_footer ul, .cf_footer li{margin:0;padding:0}.cf_ftHd{background:#eeeeee;border-top:solid 1px #fff;border-bottom:solid 1px #e6e6e6;line-height:42px;font-weight:400}.cf_fhd{color:#2e3192;font-size:20px}.cf_social a{ display:inline-block;width:31px;height:42px;margin:0;text-indent:-99999px;transition: all 0.2s ease-out 0s}.cf_fb{background-position:-138px -189px}.cf_fb:hover{background-position:-168px -189px}.tw_ft{background-position:-198px -189px}.tw_ft:hover{background-position:-229px -189px}.cf_gpls{background-position:-262px -189px}.cf_gpls:hover{background-position:-294px -189px}.cf_wndw{background-position:-335px -189px} .cf_wndw:hover{background-position:-355px -189px}.cf_bb{background-position:-392px -183px;width:32px!important}.cf_bb:hover{background-position:-427px -183px}.cf_goMob{margin-right:15px}.cf_goMob a{ display:inline-block;width:24px;height:42px;margin:0;text-indent:-99999px;transition: all 0.2s ease-out 0s}.cf_iOS{background-position:-45px -187px}.cf_iOS:hover{background-position:-68px -187px}.cf_anrd{background-position:0 -187px}.cf_anrd:hover{background-position:-23px -187px}.cf_mSit{background-position:-90px -187px}.cf_mSit:hover{background-position:-113px -187px}.cf_ftlk li{margin:7px 0;display:inline-block;width:190px;float:left;list-style:none;line-height:19px}.cf_ftlk li.last{margin-right:0 !important; width:140px}.cf_ftlk li.cf_wdth{width:240px}.cf_ftlk li a{display:block;padding:1px 0;color:#727272}.cf_ftlk li a:hover, .cf_cryt a:hover{color:#2e3192}.cf_ftlk .cf_lihd{font-size:17px;color:#000;padding:0 0 4px;font-weight:400}.cf_cryt{border-top:solid 1px #e1e1e1;color:#727272;padding:5px;font-size:13px}.cf_cryt a{color:#727272}.cf_ftlk .cf_lihd a{color:#000;}.cf_wd .cf_iOS,.cf_wd .cf_anrd,.cf_wd .cf_mSit,.cf_wd .cf_fb,.cf_wd .tw_ft,.cf_wd .cf_gpls {background-image: url(https://utils.imimg.com/globalhf/hrd-sp-v22.png);background-repeat: no-repeat}";
+document.body.appendChild(css);
+if(window.location.href.match(/my/i)=='my')
+{
+    document.getElementById('sag').innerHTML='<ul><li><a href="https://corporate.indiamart.com/about-us/">About Us</a> <a href="https://corporate.indiamart.com/category/everything-else/indiamart-achievers/">Success Stories</a> <a href="https://corporate.indiamart.com/category/everything-else/press-releases/">Press Section</a> <a href="https://corporate.indiamart.com/advertise-with-indiamart/">Advertise with Us</a><a href="http://investor.indiamart.com/list-of-creditors/">List of Creditors</a><a href="http://investor.indiamart.com">Investor Section</a></li><li><a href="https://help.indiamart.com/">Help</a><a href="https://www.indiamart.com/feedback.html">Feedback</a> <a href="https://www.indiamart.com/complaint.html">Complaints</a><a href="https://corporate.indiamart.com/customer-care-services/">Customer Care</a><a href="https://www.indiamart.com/corporate/careers-at-im.html">Jobs &amp; Careers</a><a href="https://corporate.indiamart.com/branch-offices/">Contact Us</a></li><li class="cf_wdth"><div class="cf_lihd"><a href="//seller.indiamart.com" class="ch_supplier_head">Suppliers Tool Kit</a></div><span id="ch_free_web"><a href="https://www.indiamart.com/seller/" class="ch_free_web">Sell on IndiaMART</a></span> <a href="https://trade.indiamart.com/" class="bl_log_link">Latest BuyLead</a> <a href="https://corporate.indiamart.com/quick-learn/">Learning Centre</a></li><li class="cf_wdth"><div class="cf_lihd"><a href="http://my.indiamart.com" class="ch_buyers_head">Buyers Tool Kit</a></div><a href="https://my.indiamart.com/buyertools/postbl" class="ch_post_buy">Post Your Requirement</a> <a href="https://my.indiamart.com/buyertools/myproductbuy" class="mang_pro">Products You Buy</a> <a href="https://www.indiamart.com/search.html">Search Products &amp; Suppliers</a> <a href="https://paywith.indiamart.com?bannerid=cntrlfooter">Pay With IndiaMART</a></li><li class="last"><div class="cf_lihd">Events</div><a href="https://10times.com/tradeshows" target="_blank">Trade Shows</a> <a href="https://10times.com/conferences" target="_blank">Conferences</a> <a href="https://10times.com/events/by-country" target="_blank">Events by Country</a></li></ul>';
+}
+else
+{
+    document.getElementById('sag').innerHTML='<ul><li><a href="https://corporate.indiamart.com/about-us/">About Us</a> <a href="https://corporate.indiamart.com/category/everything-else/indiamart-achievers/">Success Stories</a> <a href="https://corporate.indiamart.com/category/everything-else/press-releases/">Press Section</a> <a href="https://corporate.indiamart.com/advertise-with-indiamart/">Advertise with Us</a> <a href="https://www.indiamart.com/corporate/careers-at-im.html">Jobs &amp; Careers</a></li><li><a href="https://help.indiamart.com/">Help</a> <a href="https://www.indiamart.com/feedback.html">Feedback</a> <a href="https://www.indiamart.com/complaint.html">Complaints</a> <a href="https://corporate.indiamart.com/customer-care-services/">Customer Care</a> <a href="https://corporate.indiamart.com/branch-offices/">Contact Us</a></li><li class="cf_wdth"><div class="cf_lihd"><a href="//seller.indiamart.com" class="ch_supplier_head">Suppliers Tool Kit</a></div><span id="ch_free_web"><a href="https://www.indiamart.com/seller/" class="ch_free_web">Sell on IndiaMART</a></span> <a href="https://trade.indiamart.com/" class="bl_log_link">Latest BuyLead</a> <a href="https://corporate.indiamart.com/quick-learn/">Learning Centre</a></li><li class="cf_wdth"><div class="cf_lihd"><a href="http://my.indiamart.com" class="ch_buyers_head">Buyers Tool Kit</a></div><a href="https://my.indiamart.com/buyertools/postbl" class="ch_post_buy">Post Your Requirement</a> <a href="https://my.indiamart.com/buyertools/myproductbuy" class="mang_pro">Products You Buy</a> <a href="https://www.indiamart.com/search.html">Search Products &amp; Suppliers</a> <a href="https://paywith.indiamart.com?bannerid=cntrlfooter">Pay With IndiaMART</a></li><li class="last"><div class="cf_lihd">Events</div><a href="https://10times.com/tradeshows" target="_blank">Trade Shows</a> <a href="https://10times.com/conferences" target="_blank">Conferences</a> <a href="https://10times.com/events/by-country" target="_blank">Events by Country</a></li></ul>';   
+}
+var webAddress=location.hostname;var UrlPri =webAddress.match(/^dev/)?"dev-":(webAddress.match(/^stg/))?"stg-":"";var c_imesh = (typeof(readCookie("ImeshVisitor")) !== "undefined")?readCookie("ImeshVisitor"):'';var pv_count=0;if(readCookie("xnHist") > ""){    
+if(getparamVal(decodeURIComponent(readCookie("xnHist")), "pv") !=""){pv_count=getparamVal(decodeURIComponent(readCookie("xnHist")), "pv")}}
+var rspv = 0;
+var newVal = "";
+var o = new Date;
+o.setTime(o.getTime() + (30*60*1000)); 
+ if(readCookie("sessid").length > 0)
+ {
+    var spv1 = readCookie("sessid").split('=');
+    rspv = parseInt(spv1[1]);
+    newVal = "spv="+ ++rspv;
+ }
+ else{
+ newVal = "spv=1";
+ } 
+function callIdentifyPopup()
+{
+ if((c_imesh == '' || c_imesh==null) && (rspv == 2 || rspv == 4 || rspv == 6)){
+        $.ajaxSetup({ cache: true }); $.getScript("//"+UrlPri+"utils.imimg.com/globalhf/identified_popup.js",function(){getIdentifiedPopUpHTMLForm1(); setTimeout(function(){identify_Banner()},3000);});
+        $('#IdentifiedPopUpHTML').on("click","#countrySuggesterIdenPop",function(){changePopUpInput(identifiedPopName,1);});is_form_open=0; }
+}  
+function activeFooterOnReady()
+{
+    if(typeof(jQuery) === 'function'){
+        document.cookie = "sessid="+newVal + ";expires=" + o.toGMTString() + ";domain=.indiamart.com;path=/;"
+        //callIdentifyPopup();
+         pop_imesh = readCookie("ImeshVisitor");
+         pop_xnhist = readCookie("xnHist");
+         var ipv = getparamVal(pop_xnhist, "ipv");
+         var fpv = getparamVal(pop_xnhist, "fpv");
+         var glUserId = getparamVal(pop_imesh, "glid");
+        var name = getparamVal(pop_imesh, "mb1");
+        var modid = glmodid;
+        var email = getparamVal(pop_imesh, "em");
+        var city = getparamVal(pop_imesh, "ct");
+        var ph_country = getparamVal(pop_imesh, "phcc");
+        var cn_iso = getparamVal(pop_imesh, "iso");
+         //Mobile Verification Popup for 3rd and 5th Page view
+        //  if(((ipv == 2)||(ipv==4))&& (!(window.location.href.indexOf("my") > -1))) {  
+        //      var screen = 'VER';
+        //      if (name!=''&& getparamVal(pop_imesh, "phcc") == '91' && getparamVal(pop_imesh, "uv") != 'V'){        
+        //          $.getScript("//"+UrlPri+"utils.imimg.com/header/js/imlogin.js", function(){ send_otp(glUserId,modid,name,ph_country,'121',cn_iso,'2','4',screen);
+        //          });
+        //      }
+        // }   
+    } else{ setTimeout(function(){activeFooterOnReady()}, 50);}
+}
+if(document.readyState !== "complete" && typeof jQuery === 'function'){
+    $(document).ready(function(){ activeFooterOnReady(); });
+}else{
+    activeFooterOnReady();
+}
+function recordInboundLinkS_bounce(category, action, label, value, noninteraction) { _gaq.push(['_trackEvent', window.location.href , action, label, value, noninteraction]); }
+function recordOutboundLink3(category, action){_gaq.push(['_trackEvent', category, action, 'trackPageviewParam']);}
+function callConversionCode()
+{
+    /* <![CDATA[ */
+    var google_conversion_id = 1067418746;
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;/* ]]> */
+    $.getScript( "//www.googleadservices.com/pagead/conversion.js" );
+    $('.cf_ftlk ul li a').on('click',function(){var value=$(this).text();_gaq.push(['_trackEvent', 'IM Global Footer ', window.location.host, value, 0]); }); 
+}
+if(typeof jQuery === 'function' && document.readyState !== "complete"){
+    $(window).load(function() { callConversionCode(); });
+}else{
+    document.addEventListener('jqready', function (e){ callConversionCode(); });
+}
+</script><noscript><div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="google" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1067418746/?value=0&amp;guid=ON&amp;script=0"/></div></noscript><noscript><img height="1" width="1" alt="facebook" style="display:none" src="https://www.facebook.com/tr?id=1000024446685311&amp;ev=PixelInitialized" /></noscript>
+</body>
+</html>
